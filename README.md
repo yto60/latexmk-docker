@@ -17,13 +17,15 @@
 docker run --rm -it -v ${PWD}:/workdir ghcr.io/yto60/latexmk:latest
 ```
 
-このリポジトリをクローンする必要はありません
-
 ### `main.tex` 以外の名前の `.tex` ファイルをコンパイルしたい場合
 
 ```shell
-docker run --rm -it -v ${PWD}:/workdir ghcr.io/yto60/latexmk:latest latexmk-ext poyo.tex
+docker run --rm -it -v ${PWD}:/workdir ghcr.io/yto60/latexmk:latest latexmk-ext some_other_name.tex
 ```
+
+### サンプル
+
+`/test` 以下のファイル群がコンパイルできることを確認済みです
 
 ### その他
 
