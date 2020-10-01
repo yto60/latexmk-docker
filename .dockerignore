@@ -1,0 +1,4 @@
+.github
+test/build
+Dockerfile
+Dockerfile.full

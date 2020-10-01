@@ -12,6 +12,9 @@ RUN cpan Log::Log4perl \
 
 COPY .latexmkrc /tmp/latexmk/
 
+# for test
+COPY bin/latexmk-ext-test /usr/local/bin/
+
 WORKDIR /workdir
 
 ENTRYPOINT ["entrypoint.sh"]
