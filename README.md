@@ -1,5 +1,7 @@
 # yto60/latexmk-docker
 
+![docker-publish](https://github.com/yto60/latexmk-docker/workflows/docker-publish/badge.svg)
+
 [arkark/latexmk-docker](https://github.com/arkark/latexmk-docker) をベースに、以下の変更を加えたもの
 
 - コンパイル前に latexindent によるコード整形を実行
