@@ -14,13 +14,13 @@
 ソースコード (`main.tex`, `*.bib` など) のあるディレクトリに移動して、以下を実行
 
 ```shell
-docker run --rm -it -v ${PWD}:/workdir ghcr.io/yto60/latexmk:latest
+docker run --rm -it -v "${PWD}":/workdir ghcr.io/yto60/latexmk:latest
 ```
 
 ### `main.tex` 以外の名前の `.tex` ファイルをコンパイルしたい場合
 
 ```shell
-docker run --rm -it -v ${PWD}:/workdir ghcr.io/yto60/latexmk:latest latexmk-ext some_other_name.tex
+docker run --rm -it -v "${PWD}":/workdir ghcr.io/yto60/latexmk:latest latexmk-ext some_other_name.tex
 ```
 
 ### サンプル
