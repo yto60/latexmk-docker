@@ -1,5 +1,7 @@
 FROM arkark/latexmk:latest
 
+RUN apt-get update && apt-get install -y tzdata
+
 RUN tlmgr option repository https://ftp.kddilabs.jp/CTAN/systems/texlive/tlnet \
     && tlmgr update --self \
     && tlmgr install latexindent
@@ -9,6 +11,8 @@ RUN cpan Log::Log4perl \
     Log::Dispatch::File \
     File::HomeDir \
     Unicode::GCString
+
+ENV TZ=Asia/Tokyo
 
 COPY .latexmkrc /tmp/latexmk/
 
